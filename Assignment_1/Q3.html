@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Getting the Current Date
+        </title>
+
+        <body>
+            <script type = "text/javascript">
+
+                var date = new Date();
+                var day, month, year;
+                
+                day = date.getDate();
+                day = day < 10 ? "0" + day : day;
+
+                month = date.getMonth() + 1;
+                month = month < 10 ? "0" + month : month;
+
+                year = date.getFullYear();
+
+                // Displaying in "mm-dd-yyyy" format
+                var format1 = month + "-" + day + "-" + year;
+                document.writeln("<h1>mm-dd-yyyy : " + format1 + "</h1>");
+
+                // Displaying in "mm/dd/yyyy" format
+                var format2 = month + "/" + day + "/" + year;
+                document.writeln("<h1>mm/dd/yyyy : " + format2 + "</h1>");
+                
+                document.writeln("<center><h2>or</h2></center>");
+
+                // Displaying in "dd-mm-yyyy" format
+                var format3 = day + "-" + month +  "-" + year;
+                document.writeln("<h1>dd-mm-yyyy : " + format3 + "</h1>");
+
+                // Displaying in "dd/mm/yyyy" format
+                var format4 = day + "/" + month +  "/" + year;
+                document.writeln("<h1>dd-mm-yyyy : " + format4 + "</h1>");
+            </script>
+        </body>
+    </head>
+</html>
