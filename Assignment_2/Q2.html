@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference Between var, let and const</title>
+</head>
+<body>
+    <script defer src = "Q2.js">
+    </script>
+
+    <center>
+        <h1>
+            Difference Between var, let and const
+        </h1>
+    </center>
+
+    <ol>
+        <h2>
+            <li>
+                var :
+            </li>
+        </h2>
+        <p>
+            The scope of the variable is global or local i.e. function scoped. <br> The scope is global when, the var variable is declared outside and function/block of code. These variable is availabe to use in the whole code. <br> The var variable declared within a function accessible with that function. <br> If the variable is not declared and it is accessed, it gives "undefined".
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            console.log(declare); // Undefined <br>
+            var declare; <br>
+            <br>
+            function getCount() <br>
+            { <br>
+                var count; <br>
+                for(var i = 0; i < 10; i++) <br>
+                { <br>
+                    var c = i; <br>
+                    count = i - 1; <br>
+                } <br>
+                <br>
+                console.log(i); <br>
+                console.log(c); <br>
+                console.log(count); <br>
+            } <br>
+            getCount(); <br>
+            console.log(count); // Reference Error <br>
+        </i>
+
+        <h2>
+            <li>
+                let :
+            </li>
+        </h2>
+        <p>
+            var is also global scoped. Instead of being function scoped, let is block scoped. This means a variable created with let is available inside the block in which it is created as well as nested blocks.<br> 
+            Block here means any code surrounded into curly braces {} like if statement, for loop, while loop, etc. <br> If a variable is not declared and it is accessed, "ReferenceError" will be given.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            console.log(declar); // Reference Error <br>
+            let declar; <br>
+            <br>
+            function getCount() <br>
+            { <br>
+                let count; <br>
+                for(let i = 0; i < 10; i++) <br>
+                { <br>
+                    let c = i; <br>
+                    count = i - 1; <br>
+                } <br>
+                <br>
+                console.log(i); // Reference Error <br>
+                console.log(c); // Reference Error <br>
+                console.log(count); <br>
+            } <br>
+            getCount(); <br>
+            console.log(count); // Reference Error <br>
+            <br>
+            let pie = 3.14; <br>
+            pie = 22 / 7; <br>
+        </i>
+
+        <h2>
+            <li>
+                const :
+            </li>
+        </h2>
+        <p>
+            const is same as let, only difference is that once the value is assigned, it cannot be changed. <br> Once the value is assigned it cannot be changed.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            const pi = 3.14; <br>
+            pi = 22 / 7; // Type Error <br>
+        </i>
+    </ol>
+
+    <center>
+        <mark>
+            <b>
+                To see the Output of Example, press F12 on the keyboard.
+            </b>
+            <br>
+            <i>
+                Note : All the error raised are commented.
+            </i>
+        </mark>
+    </center>
+
+</body>
+</html>
