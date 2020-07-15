@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of console objects</title>
+</head>
+<body>
+    <script defer src = "Q1.js">
+    </script>
+
+    <h1>
+        Methods of console object
+    </h1>
+    
+    <ol>
+        <h2>
+            <li>
+                console.log() :
+            </li>
+        </h2>
+        <p>
+            console.log() is used to log/print/output a message on the console. It can display any form of data such as an array, string, boolean, etc.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            console.log(1234); <br>
+            console.log("Some string"); <br>
+            console.log([0, 1, 2]); <br>
+            console.log({1 : "xyz", 2 : "abc"}); <br>
+        </i>
+
+        <h2>
+            <li>
+                console.error() :
+            </li>
+        </h2>
+        <p>
+            console.error() is used for testing the code and display error messages. Error messages are displayed/highlighted in red color.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            console.error("Some random error"); <br>
+        </i>
+
+        <h2>
+            <li>
+                console.warn() :
+            </li>
+        </h2>
+        <p>
+            console.warn() is used to display/log warnings in the console. Highlighted in yellow color.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            console.warn("Some warning");
+        </i>
+
+        <h2>
+            <li>
+                console.clear() :
+            </li>
+        </h2>
+        <p>
+            As the name suggests, it is used to clear the console. In Chrome, “Console was cleared” message will be displayed after, clearing the console. In Firefox, no message is displayed after clearing the console.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            console.clear();
+        </i>
+
+        <h2>
+            <li>
+                console.time() and console.timeEnd() :
+            </li>
+        </h2>
+        <p>
+            These functions are used when we want to know/calculate the time spend by a function or block of code to execute. Both functions take a label, which must be the same, and code inside it can be anything.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            console.time(); <br>
+            let func = function() <br>
+            { <br>
+                console.log("Function Running"); <br>
+            } <br>
+            func(); <br>
+            console.timeEnd(); <br>
+        </i>
+
+        <h2>
+            <li>
+                console.table() :
+            </li>
+        </h2>
+        <p>
+            Used to generate a table inside the console. Input must be an object/array.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            console.table({1 : "xyz", 2 : "abc"});
+        </i>
+
+        <h2>
+            <li>
+                console.count() :
+            </li>
+        </h2>
+        <p>
+            console.count() will print the number of times it is called. A label can be added to the console view. By default, the label is “default”.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            for(i = 0; i<=3; i++) <br>
+            { <br>
+                console.count(); <br>
+            } <br>
+            // With some label <br>
+            for(i = 0; i<=3; i++) <br>
+            { <br>
+                console.count("Some Label"); <br>
+            } <br>
+        </i>
+
+        <h2>
+            <li>
+                console.group() and console.groupEnd() :
+            </li>
+        </h2>
+        <p>
+            These methods allows to group contents in a seperate intented block. These functions also accepts labels. Both functions take a label, which must be the same, and code inside it can be anything.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            console.group("Group"); <br>
+            console.log(1234); <br>
+            console.log("Some string"); <br>
+            console.log([0, 1, 2]); <br>
+            console.log({1 : "xyz", 2 : "abc"}); <br>
+            console.groupEnd("Group"); <br>
+        </i>
+    </ol>
+    
+    <mark>
+        <b>
+            To see the Output of Example, press F12 on the keyboard.
+        </b>
+    </mark>
+</body>
+</html>
