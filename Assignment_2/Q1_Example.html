@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of console objects</title>
+</head>
+<body>
+    <script type = "text/javascript">
+
+        // Example of console.clear()
+        console.clear()
+
+        // Example of console.log()
+        console.log(1234);
+        console.log("Some string");
+        console.log([0, 1, 2]);
+        console.log({1 : "xyz", 2 : "abc"});
+
+        // Example of console.error()
+        console.error("Some random error");
+
+        // Example of console.warn()
+        console.warn("Some warning");
+
+        /// Example of console.time() and console.timeEnd()
+        console.time();
+        let func = function()
+        {
+            console.log("Function Running")
+        }
+        func();
+        console.timeEnd();
+
+        // Example of console.table()
+        console.table({1 : "xyz", 2 : "abc"});
+
+    </script>
+</body>
+</html>
