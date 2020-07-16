@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String and Array Methods</title>
+</head>
+<body>
+    <script defer src = "Q2.js">
+    </script>
+
+    <center>
+        <h1>
+            String methods
+        </h1>
+    </center>
+
+    <ol>
+        <h2>
+            <li>
+                charCodeAt() :
+            </li>
+        </h2>
+        <p>
+            charCodeAt() returns the Unicode value of a character present at the specified location.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let str = "Some random string"; <br>
+            console.log(str); <br>
+            console.log(str.charCodeAt(5)); // 114 <br>
+        </i>
+
+        <h2>
+            <li>
+                search() :
+            </li>
+        </h2>
+        <p>
+            As the name suggests, it will look/search fot the specified regular expression in the given string and if the match occurs, the starting position of the string is returned.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let str = "Some random string"; <br>
+            console.log(str.search("dom")); //8
+        </i>
+
+        <h2>
+            <li>
+                match() :
+            </li>
+        </h2>
+        <p>
+            match() will look/search fot the specified regular expression in the given string and if the match occurs, it will return the regular expression.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let str = "Some random string"; <br>
+            console.log(str.match("dom"));
+        </i>
+
+        <h2>
+            <li>
+                replace() :
+            </li>
+        </h2>
+        <p>
+            replace() will replace a given string with some specified string and returns that string. Only the first found string will be replaced and rest all be intact. Original variable is not modified.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let str = "Some random string"; <br>
+            console.log(str.replace("o", "a")); // Same random string
+        </i>
+
+        <h2>
+            <li>
+                substring() :
+            </li>
+        </h2>
+        <p>
+            It fetchs the string on the basis of provided index and returns the new substring. Doesn't make any changes to the original string.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let str = "Some random string"; <br>
+            console.log(str.substring(5, 7)); // ra
+        </i>
+
+        <h2>
+            <li>
+                substr() :
+            </li>
+        </h2>
+        <p>
+            It fetchs the string on the basis of starting index & length. Returns the new substring. Doesn't make any changes to the original string.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let str = "Some random string"; <br>
+            console.log(str.substr(1, 3)); // ome
+        </i>
+
+        <h2>
+            <li>
+                slice() :
+            </li>
+        </h2>
+        <p>
+            It fetchs the string on the basis of provided index and returns the new substring. Doesn't make any changes to the original string. It accepts positive as well as negative index.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let str = "Some random string"; <br>
+            console.log(str.slice(1, -3)); // ome random str
+        </i>
+
+        <h2>
+            <li>
+                split() :
+            </li>
+        </h2>
+        <p>
+            As the name suggests, it splits a string into a substring array and returns the newly created substring array.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let str = "Some random string"; <br>
+            console.log(str.split(" ")); // ["Some", "random", "string"]
+        </i>
+
+        <h2>
+            <li>
+                trim() :
+            </li>
+        </h2>
+        <p>
+            It trims the extra whitespaces from the left and right side of the string. Resultant string is also returned.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let str1 = "            Some random string          " <br>
+            console.log(str1.trim()); // Some random string
+        </i>
+    </ol>
+
+    <center>
+        <h1>
+            Array methods
+        </h1>
+    </center>
+
+    <ol>
+        <h2>
+            <li>
+                toString() :
+            </li>
+        </h2>
+        <p>
+            Converts an array into the string of array values. All the values are comma seperated.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let arr = [1, 2, 3, 4]; <br>
+            console.log(arr); // [1, 2, 3, 4] <br>
+
+            console.log(arr.toString()); // 1,2,3,4 <br>
+        </i>
+
+        <h2>
+            <li>
+                join() :
+            </li>
+        </h2>
+        <p>
+            Converts an array into the string of array values. All the values are comma seperated. It acts as toString() but, seperator can also be specified.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let arr = [1, 2, 3, 4]; <br>
+            console.log(arr.join(":")); // 1:2:3:4
+        </i>
+
+        <h2>
+            <li>
+                splice() :
+            </li>
+        </h2>
+        <p>
+            It is used to add multiple elements at the specified position. It also allows to specify, the number of elements to be removed while adding.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let arr = [1, 2, 3, 4]; <br>
+            arr.splice(3, 0, 20, 30, 50); <br>
+            console.log(arr); // [1, 2, 3, 20, 30, 50, 4]
+        </i>
+
+        <h2>
+            <li>
+                slice() :
+            </li>
+        </h2>
+        <p>
+            It removes/slices out a piece of array into a brand new array. Doesn't remove any elements from the original array.
+        </p>
+        <b>
+            Example : <br>
+        </b>
+        <i>
+            let arr = [1, 2, 3, 4]; <br>
+            console.log(arr.slice(4, 6)); //  [30, 50] <br>
+            console.log(arr); // [1, 2, 3, 20, 30, 50, 4]
+        </i>
+    </ol>
+    
+    <center>
+        <mark>
+            <b>
+                To see the Output, press F12 on the keyboard.
+            </b>
+        </mark>
+    </center>
+</body>
+</html>
