@@ -15,3 +15,5 @@ etc...**
 <br><br>
 ## Question 3 :
 **Write a brief intro on available data types in Javascript.**
+
+C200715C200716
