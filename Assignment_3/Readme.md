@@ -11,3 +11,5 @@
 <br><br>
 ## Question 3 :
 **Ask the user if he is 21+ and log the value "Can drink", "Cannot Drink".**
+
+C200716C200716
