@@ -26,3 +26,5 @@ statements. Also the same code using switch or ternary.**
 ### Example :
 Input: 50 <br>
 Output : Marks are 50 and grade is B
+
+C200717C200717
